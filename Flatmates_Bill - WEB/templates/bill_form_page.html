@@ -1,0 +1,33 @@
+<!DOCTYPE  html>
+<html lang= 'en'>
+<head>
+    <meta charset= "UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="Black">
+
+<h2><font color='white'>The bill form</font></h2>
+<a><font color='white'>Fill in the form and click the bottom to get the results</font></a>
+<br><br>
+<form action='/result' method="post">
+    <font color='white'>
+    {{data.amount.label}}{{data.amount}}
+    <br> 
+    {{data.period.label}}{{data.period}}
+    <hr>
+    <p>First flatmate</p>
+    {{data.name1.label}}{{data.name1}}
+    <br>
+    {{data.days_in_house1.label}}{{data.days_in_house1}}
+    <hr>
+    <p>Second flatmate</p>
+    {{data.name2.label}}{{data.name2}}
+    <br>
+    {{data.days_in_house2.label}}{{data.days_in_house2}}
+    <br>
+    <br>
+    {{data.button}}
+    </font>
+</form>
+</body>
+</html>
